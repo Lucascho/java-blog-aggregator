@@ -1,4 +1,4 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -49,7 +49,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Insert title here</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("hellow world\r\n");
+      out.write("\r\n");
+      out.write("hello from spring mvc\r\n");
+      out.write("\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
