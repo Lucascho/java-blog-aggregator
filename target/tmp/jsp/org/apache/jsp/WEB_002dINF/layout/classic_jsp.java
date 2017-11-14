@@ -82,6 +82,16 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      //  tilesx:useAttribute
+      org.apache.tiles.jsp.taglib.UseAttributeTag _jspx_th_tilesx_useAttribute_0 = (_jspx_resourceInjector != null)? _jspx_resourceInjector.createTagHandlerInstance(org.apache.tiles.jsp.taglib.UseAttributeTag.class) : new org.apache.tiles.jsp.taglib.UseAttributeTag();
+      _jspx_th_tilesx_useAttribute_0.setJspContext(_jspx_page_context);
+      _jspx_th_tilesx_useAttribute_0.setName("current");
+      _jspx_th_tilesx_useAttribute_0.doTag();
+      if (_jspx_resourceInjector != null) _jspx_resourceInjector.preDestroy(_jspx_th_tilesx_useAttribute_0);
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("\t<div class=\"container\">\r\n");
       out.write("\t\t<nav class=\"navbar navbar-default\">\r\n");
       out.write("\t\t\t<div class=\"container-fluid\">\r\n");
@@ -101,15 +111,18 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t<div id=\"navbar\" class=\"navbar-collapse collapse\">\r\n");
       out.write("\t\t\t\t\t<ul class=\"nav navbar-nav\">\r\n");
-      out.write("\t\t\t\t\t\t<li class=\"active\"><a href='");
+      out.write("\t\t\t\t\t\t<li class=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'index' ? 'active' : '' }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" \"><a href='");
       if (_jspx_meth_spring_url_1(_jspx_page_context))
         return;
       out.write("'>Home</a></li>\r\n");
-      out.write("\t\t\t\t\t\t<li><a href=\"");
+      out.write("\t\t\t\t\t\t<li class=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'users' ? 'active' : '' }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" \"><a href=\"");
       if (_jspx_meth_spring_url_2(_jspx_page_context))
         return;
       out.write("\">Users</a></li>\r\n");
-      out.write("\t\t\t\t\t\t<li><a href=\"#\">Contact</a></li>\r\n");
       out.write("\t\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t<!--/.nav-collapse -->\r\n");
