@@ -3,6 +3,8 @@ package cz.jiripinkas.jba.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.support.Repositories;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import cz.jiripinkas.jba.entity.User;
@@ -14,6 +16,10 @@ public class UserService {
 	private UserRepository userRepository;
 	public List<User> findAll(){
 		return userRepository.findAll();
+	}
+	public User findOne(int id) {
+		// TODO Auto-generated method stub
+		return userRepository.findOne(id);
 	}
 
 }
