@@ -11,6 +11,11 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/WEB-INF/jsp/../layout/taglib.jsp");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -42,7 +47,9 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
+      out.write("\t\r\n");
       out.write("\r\n");
+      out.write("\t\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
