@@ -32,7 +32,7 @@
 <tilesx:useAttribute name="current"/>
 
 	<div class="container">
-		<nav class="navbar navbar-default">
+		<div class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
@@ -49,6 +49,7 @@
 					<ul class="nav navbar-nav">
 						<li class="${current == 'index' ? 'active' : '' } "><a href='<spring:url value="/" />'>Home</a></li>
 						<li class="${current == 'users' ? 'active' : '' } "><a href="<spring:url value="/users.html" />">Users</a></li>
+						<li class="${current == 'register' ? 'active' : '' } "><a href="<spring:url value="/register.html" />">register</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->

@@ -93,7 +93,7 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t<div class=\"container\">\r\n");
-      out.write("\t\t<nav class=\"navbar navbar-default\">\r\n");
+      out.write("\t\t<div class=\"navbar navbar-default\" role=\"navigation\">\r\n");
       out.write("\t\t\t<div class=\"container-fluid\">\r\n");
       out.write("\t\t\t\t<div class=\"navbar-header\">\r\n");
       out.write("\t\t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\"\r\n");
@@ -123,6 +123,12 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_spring_url_2(_jspx_page_context))
         return;
       out.write("\">Users</a></li>\r\n");
+      out.write("\t\t\t\t\t\t<li class=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'register' ? 'active' : '' }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" \"><a href=\"");
+      if (_jspx_meth_spring_url_3(_jspx_page_context))
+        return;
+      out.write("\">register</a></li>\r\n");
       out.write("\t\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t<!--/.nav-collapse -->\r\n");
@@ -246,6 +252,32 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspx_th_spring_url_2.doFinally();
       _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_2);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_url_3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:url
+    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_3 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
+    _jspx_th_spring_url_3.setPageContext(_jspx_page_context);
+    _jspx_th_spring_url_3.setParent(null);
+    _jspx_th_spring_url_3.setValue("/register.html");
+    int[] _jspx_push_body_count_spring_url_3 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_url_3 = _jspx_th_spring_url_3.doStartTag();
+      if (_jspx_th_spring_url_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_url_3[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_url_3.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_url_3.doFinally();
+      _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_3);
     }
     return false;
   }

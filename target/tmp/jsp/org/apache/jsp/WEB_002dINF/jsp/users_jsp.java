@@ -65,6 +65,7 @@ public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
       out.write("<table class=\"table table-bordered table-hover table-striped\">\r\n");
       out.write("\t<thead>\r\n");
       out.write("\t\t<tr>\r\n");

@@ -63,6 +63,7 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
       out.write("<h1>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</h1>\r\n");
