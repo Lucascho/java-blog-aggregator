@@ -142,7 +142,7 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t</ul>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t<!--/.nav-collapse -->\r\n");
-      out.write("\t\t</nav>\r\n");
+      out.write("\t\t</div>\r\n");
       out.write("\t</div>\r\n");
       out.write("\t<!--/.container-fluid -->\r\n");
       out.write("\r\n");
