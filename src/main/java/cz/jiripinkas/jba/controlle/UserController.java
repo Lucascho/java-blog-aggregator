@@ -3,6 +3,7 @@ package cz.jiripinkas.jba.controlle;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
 
 import java.lang.reflect.Constructor;
+import java.security.Principal;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,31 +23,38 @@ public class UserController {
 	private UserService userService;
 	
 	@ModelAttribute("user")
-	public User construct() {
-		return new User();
-	}
+ 	public User construct() {
+ 		return new User();
+ 	}
 	
-	@RequestMapping("/users")
-	public String users(Model model) {
-		model.addAttribute("users",userService.findAll());
-		return "users";
-	}
+ 	@RequestMapping("/users")
+  	public String users(Model model) {
+  		model.addAttribute("users", userService.findAll());
+  		return "users";
+  	}
 	
-	@RequestMapping("/users/{id}")
-	public String detail(Model model,@PathVariable int id) {
-		model.addAttribute("user", userService.findOnewithBlogs(id));
-		return "user-detail";
-	}
+ 	@RequestMapping("/users/{id}")
+  	public String detail(Model model, @PathVariable int id) {
+  		model.addAttribute("user", userService.findOne(id));
+  		return "user-detail";
+  	}
 	
 	@RequestMapping("/register")
-	public String showRegister() {
-		return "user-register";
-	}
+ 	public String showRegistrer() {
+ 		return "user-register";
+ 	}
 	
 	@RequestMapping(value="/register", method=RequestMethod.POST)
 	public String doRegistrer(@ModelAttribute("user") User user) {
 		userService.save(user);
-		return "user-register";
+		return "redirect:/register.html?success=true";
 	}
-
+	
+	@RequestMapping("/account")
+	public String account(Model model, Principal principal){
+		String name = principal.getName();
+		model.addAttribute("user", userService.findOneWithBlogs(name));
+		return "user-detail";
+	}
+	
 }
