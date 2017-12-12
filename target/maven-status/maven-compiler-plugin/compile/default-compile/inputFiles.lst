@@ -6,6 +6,7 @@ C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\entity\Item
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\controlle\UserController.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\repository\UserRepository.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\service\InitDbService.java
+C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\service\BlogService.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\repository\ItemRepository.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\entity\User.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\controlle\LoginController.java
