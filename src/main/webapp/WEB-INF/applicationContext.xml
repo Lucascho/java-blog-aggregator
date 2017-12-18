@@ -43,8 +43,7 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<jpa:repositories base-package="cz.jiripinkas.jba.repository" entity-manager-factory-ref="emf" transaction-manager-ref="transactionManager"/>
-	
+	<jpa:repositories base-package="cz.jiripinkas.jba.repository" />	
 	
 	<import resource="security.xml"/>
 

@@ -70,6 +70,7 @@ public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<thead>\r\n");
       out.write("\t\t<tr>\r\n");
       out.write("\t\t\t<th>user name</th>\r\n");
+      out.write("\t\t\t<th>operations</th>\r\n");
       out.write("\t\t</tr>\r\n");
       out.write("\t</thead>\r\n");
       out.write("\t<tbody>\r\n");
@@ -118,6 +119,13 @@ public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write(" \r\n");
           out.write("\t\t\t\t\t</a>\r\n");
           out.write("\t\t\t\t</td>\r\n");
+          out.write("\t\t\t\t<td><a href=\"");
+          if (_jspx_meth_spring_url_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
+            return true;
+          out.write("\" class=\"btn btn-danger\">\r\n");
+          out.write("\t\t\t\t\t\tremove\r\n");
+          out.write("\t\t\t\t\t</a>\r\n");
+          out.write("\t\t\t\t</td>\r\n");
           out.write("\t\t\t</tr>\r\n");
           out.write("\t\t");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
@@ -161,6 +169,32 @@ public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspx_th_spring_url_0.doFinally();
       _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_url_1(javax.servlet.jsp.tagext.JspTag _jspx_th_c_forEach_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_forEach_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:url
+    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_1 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
+    _jspx_th_spring_url_1.setPageContext(_jspx_page_context);
+    _jspx_th_spring_url_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_forEach_0);
+    _jspx_th_spring_url_1.setValue((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/users/remove/${user.id}.html", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    int[] _jspx_push_body_count_spring_url_1 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_url_1 = _jspx_th_spring_url_1.doStartTag();
+      if (_jspx_th_spring_url_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_url_1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_url_1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_url_1.doFinally();
+      _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_1);
     }
     return false;
   }
