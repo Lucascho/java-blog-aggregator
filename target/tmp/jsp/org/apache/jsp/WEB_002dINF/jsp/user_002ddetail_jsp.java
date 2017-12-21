@@ -93,6 +93,11 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("<script type=\"text/javascript\">\r\n");
       out.write("$(document).ready(function() {\r\n");
       out.write("\t$('.nav-tabs a:first').tab('show'); // Select first tab\r\n");
+      out.write("\t$('.triggerRemove').click(function (e){\r\n");
+      out.write("\t\te.preventDefault();\r\n");
+      out.write("\t\t$('#modalRemove .removeBtn').attr('href',$(this).attr('href'));\r\n");
+      out.write("\t\t$('#modalRemove').modal();\r\n");
+      out.write("\t});\r\n");
       out.write("});\r\n");
       out.write("</script>\r\n");
       out.write("\r\n");
@@ -109,7 +114,27 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
       if (_jspx_meth_c_forEach_1(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("</div>");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!-- Modal -->\r\n");
+      out.write("<div class=\"modal fade\" id=\"modalRemove\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\">\r\n");
+      out.write("  <div class=\"modal-dialog\" role=\"document\">\r\n");
+      out.write("    <div class=\"modal-content\">\r\n");
+      out.write("      <div class=\"modal-header\">\r\n");
+      out.write("        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\r\n");
+      out.write("        <h4 class=\"modal-title\" id=\"myModalLabel\">Remove blog</h4>\r\n");
+      out.write("      </div>\r\n");
+      out.write("      <div class=\"modal-body\">\r\n");
+      out.write("        Really remove?\r\n");
+      out.write("      </div>\r\n");
+      out.write("      <div class=\"modal-footer\">\r\n");
+      out.write("        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancel</button>\r\n");
+      out.write("        <a href=\"\" class=\"btn btn-danger removeBtn\">Remove</a>\r\n");
+      out.write("      </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("  </div>\r\n");
+      out.write("</div>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -317,7 +342,7 @@ public final class user_002ddetail_jsp extends org.apache.jasper.runtime.HttpJsp
           out.write("\t<a href=\"");
           if (_jspx_meth_spring_url_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_1, _jspx_page_context, _jspx_push_body_count_c_forEach_1))
             return true;
-          out.write("\" class=\"btn btn-danger\">remove blog</a>\r\n");
+          out.write("\" class=\"btn btn-danger triggerRemove\">remove blog</a>\r\n");
           out.write("\t");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${blog.url}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</p>\r\n");
