@@ -17,6 +17,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
   }
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_path_cssClass_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_errors_path_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_if_test;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_form_cssClass_commandName;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_password_path_cssClass_nobody;
@@ -29,6 +30,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
 
   public void _jspInit() {
     _jspx_tagPool_form_input_path_cssClass_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_form_errors_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_c_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_form_cssClass_commandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_password_path_cssClass_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -36,6 +38,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
 
   public void _jspDestroy() {
     _jspx_tagPool_form_input_path_cssClass_nobody.release();
+    _jspx_tagPool_form_errors_path_nobody.release();
     _jspx_tagPool_c_if_test.release();
     _jspx_tagPool_form_form_cssClass_commandName.release();
     _jspx_tagPool_form_password_path_cssClass_nobody.release();
@@ -75,8 +78,136 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\r\n");
       out.write(" \r\n");
       out.write(" ");
-      if (_jspx_meth_form_form_0(_jspx_page_context))
-        return;
+      //  form:form
+      org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_form_0 = (org.springframework.web.servlet.tags.form.FormTag) _jspx_tagPool_form_form_cssClass_commandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
+      _jspx_th_form_form_0.setPageContext(_jspx_page_context);
+      _jspx_th_form_form_0.setParent(null);
+      _jspx_th_form_form_0.setCommandName("user");
+      _jspx_th_form_form_0.setCssClass("form-horizontal");
+      int[] _jspx_push_body_count_form_form_0 = new int[] { 0 };
+      try {
+        int _jspx_eval_form_form_0 = _jspx_th_form_form_0.doStartTag();
+        if (_jspx_eval_form_form_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+          do {
+            out.write("\r\n");
+            out.write(" \r\n");
+            out.write(" \t");
+            if (_jspx_meth_c_if_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+              return;
+            out.write("\r\n");
+            out.write("\r\n");
+            out.write(" \t<div class=\"form-group\">\r\n");
+            out.write(" \t\t<label for=\"name\" class=\"col-sm-2 control-label\">Name:</label>\r\n");
+            out.write(" \t\t<div class=\"col-sm-10\">\r\n");
+            out.write(" \t\t\t");
+            if (_jspx_meth_form_input_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+              return;
+            out.write("\r\n");
+            out.write(" \t\t\t");
+            //  form:errors
+            org.springframework.web.servlet.tags.form.ErrorsTag _jspx_th_form_errors_0 = (org.springframework.web.servlet.tags.form.ErrorsTag) _jspx_tagPool_form_errors_path_nobody.get(org.springframework.web.servlet.tags.form.ErrorsTag.class);
+            _jspx_th_form_errors_0.setPageContext(_jspx_page_context);
+            _jspx_th_form_errors_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+            _jspx_th_form_errors_0.setPath("name");
+            int[] _jspx_push_body_count_form_errors_0 = new int[] { 0 };
+            try {
+              int _jspx_eval_form_errors_0 = _jspx_th_form_errors_0.doStartTag();
+              if (_jspx_th_form_errors_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+                return;
+              }
+            } catch (Throwable _jspx_exception) {
+              while (_jspx_push_body_count_form_errors_0[0]-- > 0)
+                out = _jspx_page_context.popBody();
+              _jspx_th_form_errors_0.doCatch(_jspx_exception);
+            } finally {
+              _jspx_th_form_errors_0.doFinally();
+              _jspx_tagPool_form_errors_path_nobody.reuse(_jspx_th_form_errors_0);
+            }
+            out.write("\r\n");
+            out.write(" \t\t</div>\r\n");
+            out.write(" \t</div>\r\n");
+            out.write(" \t<div class=\"form-group\">\r\n");
+            out.write(" \t\t<label for=\"email\" class=\"col-sm-2 control-label\">Email:</label>\r\n");
+            out.write(" \t\t<div class=\"col-sm-10\">\r\n");
+            out.write(" \t\t\t");
+            if (_jspx_meth_form_input_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+              return;
+            out.write("\r\n");
+            out.write(" \t\t\t");
+            //  form:errors
+            org.springframework.web.servlet.tags.form.ErrorsTag _jspx_th_form_errors_1 = (org.springframework.web.servlet.tags.form.ErrorsTag) _jspx_tagPool_form_errors_path_nobody.get(org.springframework.web.servlet.tags.form.ErrorsTag.class);
+            _jspx_th_form_errors_1.setPageContext(_jspx_page_context);
+            _jspx_th_form_errors_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+            _jspx_th_form_errors_1.setPath("email");
+            int[] _jspx_push_body_count_form_errors_1 = new int[] { 0 };
+            try {
+              int _jspx_eval_form_errors_1 = _jspx_th_form_errors_1.doStartTag();
+              if (_jspx_th_form_errors_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+                return;
+              }
+            } catch (Throwable _jspx_exception) {
+              while (_jspx_push_body_count_form_errors_1[0]-- > 0)
+                out = _jspx_page_context.popBody();
+              _jspx_th_form_errors_1.doCatch(_jspx_exception);
+            } finally {
+              _jspx_th_form_errors_1.doFinally();
+              _jspx_tagPool_form_errors_path_nobody.reuse(_jspx_th_form_errors_1);
+            }
+            out.write("\r\n");
+            out.write(" \t\t</div>\r\n");
+            out.write(" \t</div>\r\n");
+            out.write(" \t<div class=\"form-group\">\r\n");
+            out.write(" \t\t<label for=\"password\" class=\"col-sm-2 control-label\">Password:</label>\r\n");
+            out.write(" \t\t<div class=\"col-sm-10\">\r\n");
+            out.write(" \t\t\t");
+            if (_jspx_meth_form_password_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+              return;
+            out.write("\r\n");
+            out.write(" \t\t\t");
+            //  form:errors
+            org.springframework.web.servlet.tags.form.ErrorsTag _jspx_th_form_errors_2 = (org.springframework.web.servlet.tags.form.ErrorsTag) _jspx_tagPool_form_errors_path_nobody.get(org.springframework.web.servlet.tags.form.ErrorsTag.class);
+            _jspx_th_form_errors_2.setPageContext(_jspx_page_context);
+            _jspx_th_form_errors_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+            _jspx_th_form_errors_2.setPath("password");
+            int[] _jspx_push_body_count_form_errors_2 = new int[] { 0 };
+            try {
+              int _jspx_eval_form_errors_2 = _jspx_th_form_errors_2.doStartTag();
+              if (_jspx_th_form_errors_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+                return;
+              }
+            } catch (Throwable _jspx_exception) {
+              while (_jspx_push_body_count_form_errors_2[0]-- > 0)
+                out = _jspx_page_context.popBody();
+              _jspx_th_form_errors_2.doCatch(_jspx_exception);
+            } finally {
+              _jspx_th_form_errors_2.doFinally();
+              _jspx_tagPool_form_errors_path_nobody.reuse(_jspx_th_form_errors_2);
+            }
+            out.write("\r\n");
+            out.write(" \t\t</div>\r\n");
+            out.write(" \t</div>\r\n");
+            out.write(" \t<div class=\"form-group\">\r\n");
+            out.write(" \t\t<div class=\"col-sm-2\">\r\n");
+            out.write(" \t\t\t<input type=\"submit\" value=\"Save\" class=\"btn btn-lg btn-primary\" />\r\n");
+            out.write(" \t\t</div>\r\n");
+            out.write(" \t</div>\r\n");
+            out.write(" ");
+            int evalDoAfterBody = _jspx_th_form_form_0.doAfterBody();
+            if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+              break;
+          } while (true);
+        }
+        if (_jspx_th_form_form_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+          return;
+        }
+      } catch (Throwable _jspx_exception) {
+        while (_jspx_push_body_count_form_form_0[0]-- > 0)
+          out = _jspx_page_context.popBody();
+        _jspx_th_form_form_0.doCatch(_jspx_exception);
+      } finally {
+        _jspx_th_form_form_0.doFinally();
+        _jspx_tagPool_form_form_cssClass_commandName.reuse(_jspx_th_form_form_0);
+      }
       out.write(' ');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -89,80 +220,6 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_form_form_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_form_0 = (org.springframework.web.servlet.tags.form.FormTag) _jspx_tagPool_form_form_cssClass_commandName.get(org.springframework.web.servlet.tags.form.FormTag.class);
-    _jspx_th_form_form_0.setPageContext(_jspx_page_context);
-    _jspx_th_form_form_0.setParent(null);
-    _jspx_th_form_form_0.setCommandName("user");
-    _jspx_th_form_form_0.setCssClass("form-horizontal");
-    int[] _jspx_push_body_count_form_form_0 = new int[] { 0 };
-    try {
-      int _jspx_eval_form_form_0 = _jspx_th_form_form_0.doStartTag();
-      if (_jspx_eval_form_form_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\r\n");
-          out.write(" \r\n");
-          out.write(" \t");
-          if (_jspx_meth_c_if_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
-            return true;
-          out.write("\r\n");
-          out.write("\r\n");
-          out.write(" \t<div class=\"form-group\">\r\n");
-          out.write(" \t\t<label for=\"name\" class=\"col-sm-2 control-label\">Name:</label>\r\n");
-          out.write(" \t\t<div class=\"col-sm-10\">\r\n");
-          out.write(" \t\t\t");
-          if (_jspx_meth_form_input_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
-            return true;
-          out.write("\r\n");
-          out.write(" \t\t</div>\r\n");
-          out.write(" \t</div>\r\n");
-          out.write(" \t<div class=\"form-group\">\r\n");
-          out.write(" \t\t<label for=\"email\" class=\"col-sm-2 control-label\">Email:</label>\r\n");
-          out.write(" \t\t<div class=\"col-sm-10\">\r\n");
-          out.write(" \t\t\t");
-          if (_jspx_meth_form_input_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
-            return true;
-          out.write("\r\n");
-          out.write(" \t\t</div>\r\n");
-          out.write(" \t</div>\r\n");
-          out.write(" \t<div class=\"form-group\">\r\n");
-          out.write(" \t\t<label for=\"password\" class=\"col-sm-2 control-label\">Password:</label>\r\n");
-          out.write(" \t\t<div class=\"col-sm-10\">\r\n");
-          out.write(" \t\t\t");
-          if (_jspx_meth_form_password_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
-            return true;
-          out.write("\r\n");
-          out.write(" \t\t</div>\r\n");
-          out.write(" \t</div>\r\n");
-          out.write(" \t<div class=\"form-group\">\r\n");
-          out.write(" \t\t<div class=\"col-sm-2\">\r\n");
-          out.write(" \t\t\t<input type=\"submit\" value=\"Save\" class=\"btn btn-lg btn-primary\" />\r\n");
-          out.write(" \t\t</div>\r\n");
-          out.write(" \t</div>\r\n");
-          out.write(" ");
-          int evalDoAfterBody = _jspx_th_form_form_0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_form_form_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_form_form_0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_form_form_0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_form_form_0.doFinally();
-      _jspx_tagPool_form_form_cssClass_commandName.reuse(_jspx_th_form_form_0);
-    }
-    return false;
   }
 
   private boolean _jspx_meth_c_if_0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
