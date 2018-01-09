@@ -389,7 +389,7 @@ public final class classic_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_security_authorize_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       out.write("\r\n");
       out.write("\t\t\t              \t<li class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'users' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${current == 'account' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\"><a href=\"");
       if (_jspx_meth_spring_url_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_security_authorize_2, _jspx_page_context))
         return true;
