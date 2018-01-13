@@ -5,9 +5,11 @@ C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\entity\Role
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\repository\BlogRepository.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\entity\Item.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\controlle\UserController.java
+C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\annotation\UniqueUsername.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\repository\UserRepository.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\service\InitDbService.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\service\BlogService.java
+C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\annotation\UniqueUsernameValidator.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\repository\ItemRepository.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\entity\User.java
 C:\workspace217\java-blog-aggregator\src\main\java\cz\jiripinkas\jba\controlle\LoginController.java
