@@ -21,6 +21,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_if_test;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_form_cssClass_commandName;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_password_path_cssClass_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_url_value_nobody;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -34,6 +35,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
     _jspx_tagPool_c_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_form_cssClass_commandName = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_password_path_cssClass_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_spring_url_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
@@ -42,6 +44,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
     _jspx_tagPool_c_if_test.release();
     _jspx_tagPool_form_form_cssClass_commandName.release();
     _jspx_tagPool_form_password_path_cssClass_nobody.release();
+    _jspx_tagPool_spring_url_value_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -72,6 +75,7 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -215,40 +219,55 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\r\n");
       out.write("\r\n");
       out.write("<script type=\"text/javascript\">\r\n");
-      out.write("\t$(document).ready(\r\n");
-      out.write("\t\t\tfunction() {\r\n");
-      out.write("\r\n");
-      out.write("\t\t\t\t$(\".registrationForm\").validate(\r\n");
-      out.write("\t\t\t\t\t\t{\r\n");
-      out.write("\t\t\t\t\t\t\trules : {\r\n");
-      out.write("\t\t\t\t\t\t\t\tname : {\r\n");
-      out.write("\t\t\t\t\t\t\t\t\trequired : true,\r\n");
-      out.write("\t\t\t\t\t\t\t\t\tminlength : 3\r\n");
-      out.write("\t\t\t\t\t\t\t\t},\r\n");
-      out.write("\t\t\t\t\t\t\t\temail : {\r\n");
-      out.write("\t\t\t\t\t\t\t\t\trequired : true,\r\n");
-      out.write("\t\t\t\t\t\t\t\t\temail : true\r\n");
-      out.write("\t\t\t\t\t\t\t\t},\r\n");
-      out.write("\t\t\t\t\t\t\t\tpassword : {\r\n");
-      out.write("\t\t\t\t\t\t\t\t\trequired : true,\r\n");
-      out.write("\t\t\t\t\t\t\t\t\tminlength : 5\r\n");
-      out.write("\t\t\t\t\t\t\t\t},\r\n");
-      out.write("\t\t\t\t\t\t\t\tpassword_again : {\r\n");
-      out.write("\t\t\t\t\t\t\t\t\trequired : true,\r\n");
-      out.write("\t\t\t\t\t\t\t\t\tminlength : 5,\r\n");
-      out.write("\t\t\t\t\t\t\t\t\tequalTo : \"#password\"\r\n");
-      out.write("\t\t\t\t\t\t\t\t}\r\n");
-      out.write("\t\t\t\t\t\t\t},\r\n");
-      out.write("\t\t\t\t\t\t\thighlight : function(element) {\r\n");
-      out.write("\t\t\t\t\t\t\t\t$(element).closest('.form-group').removeClass(\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t'has-success').addClass('has-error');\r\n");
-      out.write("\t\t\t\t\t\t\t},\r\n");
-      out.write("\t\t\t\t\t\t\tunhighlight : function(element) {\r\n");
-      out.write("\t\t\t\t\t\t\t\t$(element).closest('.form-group').removeClass(\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t'has-error').addClass('has-success');\r\n");
+      out.write("$(document).ready(function() {\r\n");
+      out.write("\t\r\n");
+      out.write("\t$(\".registrationForm\").validate(\r\n");
+      out.write("\t\t{\r\n");
+      out.write("\t\t\trules: {\r\n");
+      out.write("\t\t\t\tname: {\r\n");
+      out.write("\t\t\t\t\trequired : true,\r\n");
+      out.write("\t\t\t\t\tminlength : 3,\r\n");
+      out.write("\t\t\t\t\tremote : {\r\n");
+      out.write("\t\t\t\t\t\turl: \"");
+      if (_jspx_meth_spring_url_0(_jspx_page_context))
+        return;
+      out.write("\",\r\n");
+      out.write("\t\t\t\t\t\ttype: \"get\",\r\n");
+      out.write("\t\t\t\t\t\tdata: {\r\n");
+      out.write("\t\t\t\t\t\t\tusername: function() {\r\n");
+      out.write("\t\t\t\t\t\t\t\treturn $(\"#name\").val();\r\n");
       out.write("\t\t\t\t\t\t\t}\r\n");
-      out.write("\t\t\t\t\t\t});\r\n");
-      out.write("\t\t\t});\r\n");
+      out.write("\t\t\t\t\t\t}\r\n");
+      out.write("\t\t\t\t\t}\r\n");
+      out.write("\t\t\t\t},\r\n");
+      out.write("\t\t\t\temail: {\r\n");
+      out.write("\t\t\t\t\trequired : true,\r\n");
+      out.write("\t\t\t\t\temail: true\r\n");
+      out.write("\t\t\t\t},\r\n");
+      out.write("\t\t\t\tpassword: {\r\n");
+      out.write("\t\t\t\t\trequired : true,\r\n");
+      out.write("\t\t\t\t\tminlength : 5\r\n");
+      out.write("\t\t\t\t},\r\n");
+      out.write("\t\t\t\tpassword_again: {\r\n");
+      out.write("\t\t\t\t\trequired : true,\r\n");
+      out.write("\t\t\t\t\tminlength : 5,\r\n");
+      out.write("\t\t\t\t\tequalTo: \"#password\"\r\n");
+      out.write("\t\t\t\t}\r\n");
+      out.write("\t\t\t},\r\n");
+      out.write("\t\t\thighlight: function(element) {\r\n");
+      out.write("\t\t\t\t$(element).closest('.form-group').removeClass('has-success').addClass('has-error');\r\n");
+      out.write("\t\t\t},\r\n");
+      out.write("\t\t\tunhighlight: function(element) {\r\n");
+      out.write("\t\t\t\t$(element).closest('.form-group').removeClass('has-error').addClass('has-success');\r\n");
+      out.write("\t\t\t},\r\n");
+      out.write("\t\t\tmessages: {\r\n");
+      out.write("\t\t\t\tname: {\r\n");
+      out.write("\t\t\t\t\tremote: \"Such username already exists!\"\r\n");
+      out.write("\t\t\t\t}\r\n");
+      out.write("\t\t\t}\r\n");
+      out.write("\t\t}\r\n");
+      out.write("\t);\r\n");
+      out.write("});\r\n");
       out.write("</script>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -368,6 +387,32 @@ public final class user_002dregister_jsp extends org.apache.jasper.runtime.HttpJ
     } finally {
       _jspx_th_form_password_0.doFinally();
       _jspx_tagPool_form_password_path_cssClass_nobody.reuse(_jspx_th_form_password_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_url_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:url
+    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_0 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
+    _jspx_th_spring_url_0.setPageContext(_jspx_page_context);
+    _jspx_th_spring_url_0.setParent(null);
+    _jspx_th_spring_url_0.setValue("/register/available.html");
+    int[] _jspx_push_body_count_spring_url_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_url_0 = _jspx_th_spring_url_0.doStartTag();
+      if (_jspx_th_spring_url_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_url_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_url_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_url_0.doFinally();
+      _jspx_tagPool_spring_url_value_nobody.reuse(_jspx_th_spring_url_0);
     }
     return false;
   }
